@@ -129,11 +129,20 @@ nav h1 {
     margin-bottom: 120px;
 }
 
+.scrolling-wrapper-flexbox {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-color: #2E9AFF /*!!!На данный момент "scrollbar-color" очень слабо поддерживается браузерами. Свойство будет работать только в Firefox и Google Chrome выше 121 версии.!!! */
+}
+
+.card {
+    flex: 0 0 auto;
+}
+
 .catalog-cards {
     margin-bottom: 70px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
 .catalog-cards_fav {
@@ -162,7 +171,18 @@ nav h1 {
 }
 
 .a1 {
-    margin-right: 101px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 15px;
+}
+
+.a2 {
+    font-size: 15px;
+    display: inline-block
+}
+
+.a22 {
+    margin-bottom: 0px;
 }
 
 .card:hover {
@@ -208,6 +228,12 @@ nav h1 {
 .button-favorite_fav:hover,
 .button-cart:hover {
     background-color: #0056b3; /* Темнее при наведении */
+}
+
+.ad {
+    width: 100%;
+    height: auto;
+    margin-bottom: 124px;
 }
 
 .end {
@@ -267,7 +293,6 @@ input::placeholder {
 
 
 .cart {
-    background-color: #8092C3;
     display: flex;
     justify-content: space-evenly;
     padding-top: 70px;
