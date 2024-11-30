@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VORONIN - ваш аккаунт</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Sofia+Sans+Semi+Condensed:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="font">
+        <ul>
+            <li><a href="delivery.html"><h2>Доставка</h2></a></li>
+            <li><a href="list.html"><h2>Магазины</h2></a></li>
+            <li><a href="main page.html"><h1>VORONIN</h1></a></li>
+            <li><a href="#"><h2>+8(888)888-88-88</h2></a></li>
+            <li><a href="favorite.html"><img src='materials/nav/Heart.svg' onmouseover="this.src='materials/nav/Heart_hover.svg';" onmouseout="this.src='materials/nav/Heart.svg';" /></a></li>
+            <li><a href="cart.html"><img src='materials/nav/Cart.svg' onmouseover="this.src='materials/nav/Cart_hover.svg';" onmouseout="this.src='materials/nav/Cart.svg';" /></a></li>
+            <li><a href="account.html"><img src='materials/nav/people.svg' onmouseover="this.src='materials/nav/people_hover.svg';" onmouseout="this.src='materials/nav/people.svg';" /></a></li>
+        </ul>
+    </nav>
+    <div class="container-xxl font">
+        <div class="d6">
+            <form>
+              <input type="text" placeholder="Искать здесь...">
+              <button type="submit"></button>
+            </form>
+        </div>
+
+        <h3>Настройки</h3>
+
+        <div class="settings">
+            <div class="icon">
+                <img src="materials/account/Account.svg" alt="">
+            </div>
+            <div class="set_info">
+                <div class="set_input">
+                    <input class="input_set s" type="text" placeholder="Имя">
+                    <input class="input_set" type="text" placeholder="Фамилия">
+                    <input class="input_set s" type="text" placeholder="Почта">
+                    <input class="input_set phone" type="text" placeholder="Телефон">
+                </div>
+                <div class="set_button">
+                    <button class="but_set">Сохранить</button>
+                </div>
+            </div>
+        </div>
+
+        <h3>Ваши покупки</h3>
+        <div class="catalog-cards_acc">
+            <div class="card a1" onmouseenter="showDetails(this)" onmouseleave="hideDetails(this)">
+                <img src="materials/tovar.svg" alt="Название товара" class="product-image">
+                <div class="product-info">
+                    <h4 class="product-title">Кольцо из белого золота с бриллиантами</h4>
+                    <p class="product-price"><h4>137 490 ₽</h4></p>
+                </div>
+                <div class="additional-info">
+                    <p><h5>Белое золото 585 пробы<br>Бриллиант (природный)<br>134 шт, 0.496 карат
+                    </h5></p>
+                    <button class="button-favorite" onclick="addToFavorites(event)">В избранное</button>
+                    <button class="button-cart" onclick="addToCart(event)">В корзину</button>
+                </div>
+            </div>
+            <div class="card" onmouseenter="showDetails(this)" onmouseleave="hideDetails(this)">
+                <img src="materials/tovar.svg" alt="Название товара" class="product-image">
+                <div class="product-info">
+                    <h4 class="product-title">Кольцо из белого золота с бриллиантами</h4>
+                    <p class="product-price"><h4>137 490 ₽</h4></p>
+                </div>
+                <div class="additional-info">
+                    <p><h5>Белое золото 585 пробы<br>Бриллиант (природный)<br>134 шт, 0.496 карат
+                    </h5></p>
+                    <button class="button-favorite" onclick="addToFavorites(event)">В избранное</button>
+                    <button class="button-cart" onclick="addToCart(event)">В корзину</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="end">
+            <h4>© 2024 VORONIN</h4>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+    <script src="script1.js"></script>
+</body>
+</html>

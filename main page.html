@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VORONIN - ювелирный магазин</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Sofia+Sans+Semi+Condensed:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="font">
+        <ul>
+            <li><a href="delivery.html"><h2>Доставка</h2></a></li>
+            <li><a href="list.html"><h2>Магазины</h2></a></li>
+            <li><a href="main page.html"><h1>VORONIN</h1></a></li>
+            <li><a href="#"><h2>+8(888)888-88-88</h2></a></li>
+            <li><a href="favorite.html"><img src='materials/nav/Heart.svg' onmouseover="this.src='materials/nav/Heart_hover.svg';" onmouseout="this.src='materials/nav/Heart.svg';" /></a></li>
+            <li><a href="cart.html"><img src='materials/nav/Cart.svg' onmouseover="this.src='materials/nav/Cart_hover.svg';" onmouseout="this.src='materials/nav/Cart.svg';" /></a></li>
+            <li><a href="account.html"><img src='materials/nav/people.svg' onmouseover="this.src='materials/nav/people_hover.svg';" onmouseout="this.src='materials/nav/people.svg';" /></a></li>
+        </ul>
+    </nav>
+    <div class="container-xxl font">
+        <div class="d6">
+            <form>
+              <input type="text" placeholder="Искать здесь...">
+              <button type="submit"></button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="slideshow-container">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="materials/ad/Реклама 1.svg" class="d-block w-100" alt="">
+              </div>
+              <div class="carousel-item">
+                <img src="materials/ad/Реклама 2.svg" class="d-block w-100" alt="">
+              </div>
+              <div class="carousel-item">
+                <img src="materials/ad/Реклама 3.svg" class="d-block w-100" alt="">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Предыдущий</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Следующий</span>
+            </button>
+        </div>
+    </div>
+    
+
+
+    <div class="container-xxl font">
+        <div class="catalog-text">
+            <h3>Каталог</h3>
+        </div>
+        <div class="catalog-cards">
+            <div class="card a1" onmouseenter="showDetails(this)" onmouseleave="hideDetails(this)">
+                <img src="materials/tovar.svg" alt="Название товара" class="product-image">
+                <div class="product-info">
+                    <h4 class="product-title">Кольцо из белого золота с бриллиантами</h4>
+                    <p class="product-price"><h4>137 490 ₽</h4></p>
+                </div>
+                <div class="additional-info">
+                    <p><h5>Белое золото 585 пробы<br>Бриллиант (природный)<br>134 шт, 0.496 карат
+                    </h5></p>
+                    <button class="button-favorite" onclick="addToFavorites(event)">В избранное</button>
+                    <button class="button-cart" onclick="addToCart(event)">В корзину</button>
+                </div>
+            </div>
+            <div class="card a1" onmouseenter="showDetails(this)" onmouseleave="hideDetails(this)">
+                <img src="materials/tovar.svg" alt="Название товара" class="product-image">
+                <div class="product-info">
+                    <h4 class="product-title">Кольцо из белого золота с бриллиантами</h4>
+                    <p class="product-price"><h4>137 490 ₽</h4></p>
+                </div>
+                <div class="additional-info">
+                    <p><h5>Белое золото 585 пробы<br>Бриллиант (природный)<br>134 шт, 0.496 карат
+                    </h5></p>
+                    <button class="button-favorite" onclick="addToFavorites(event)">В избранное</button>
+                    <button class="button-cart" onclick="addToCart(event)">В корзину</button>
+                </div>
+            </div>
+            <div class="card" onmouseenter="showDetails(this)" onmouseleave="hideDetails(this)">
+                <img src="materials/tovar.svg" alt="Название товара" class="product-image">
+                <div class="product-info">
+                    <h4 class="product-title">Кольцо из белого золота с бриллиантами</h4>
+                    <p class="product-price"><h4>137 490 ₽</h4></p>
+                </div>
+                <div class="additional-info">
+                    <p><h5>Белое золото 585 пробы<br>Бриллиант (природный)<br>134 шт, 0.496 карат
+                    </h5></p>
+                    <button class="button-favorite" onclick="addToFavorites(event)">В избранное</button>
+                    <button class="button-cart" onclick="addToCart(event)">В корзину</button>
+                </div>
+            </div>
+            <div class="card a1" onmouseenter="showDetails(this)" onmouseleave="hideDetails(this)">
+                <img src="materials/tovar.svg" alt="Название товара" class="product-image">
+                <div class="product-info">
+                    <h4 class="product-title">Кольцо из белого золота с бриллиантами</h4>
+                    <p class="product-price"><h4>137 490 ₽</h4></p>
+                </div>
+                <div class="additional-info">
+                    <p><h5>Белое золото 585 пробы<br>Бриллиант (природный)<br>134 шт, 0.496 карат
+                    </h5></p>
+                    <button class="button-favorite" onclick="addToFavorites(event)">В избранное</button>
+                    <button class="button-cart" onclick="addToCart(event)">В корзину</button>
+                </div>
+            </div>
+            <div class="card a1" onmouseenter="showDetails(this)" onmouseleave="hideDetails(this)">
+                <img src="materials/tovar.svg" alt="Название товара" class="product-image">
+                <div class="product-info">
+                    <h4 class="product-title">Кольцо из белого золота с бриллиантами</h4>
+                    <p class="product-price"><h4>137 490 ₽</h4></p>
+                </div>
+                <div class="additional-info">
+                    <p><h5>Белое золото 585 пробы<br>Бриллиант (природный)<br>134 шт, 0.496 карат
+                    </h5></p>
+                    <button class="button-favorite" onclick="addToFavorites(event)">В избранное</button>
+                    <button class="button-cart" onclick="addToCart(event)">В корзину</button>
+                </div>
+            </div>
+            <div class="card" onmouseenter="showDetails(this)" onmouseleave="hideDetails(this)">
+                <img src="materials/tovar.svg" alt="Название товара" class="product-image">
+                <div class="product-info">
+                    <h4 class="product-title">Кольцо из белого золота с бриллиантами</h4>
+                    <p class="product-price"><h4>137 490 ₽</h4></p>
+                </div>
+                <div class="additional-info">
+                    <p><h5>Белое золото 585 пробы<br>Бриллиант (природный)<br>134 шт, 0.496 карат
+                    </h5></p>
+                    <button class="button-favorite" onclick="addToFavorites(event)">В избранное</button>
+                    <button class="button-cart" onclick="addToCart(event)">В корзину</button>
+                </div>
+            </div>
+        </div>
+        <div class="end">
+            <h4>© 2024 VORONIN</h4>
+        </div>
+    </div>
+    
+    
+    <script src="script.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>
